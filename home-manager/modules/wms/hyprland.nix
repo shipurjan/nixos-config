@@ -1,6 +1,7 @@
 {
   wayland.windowManager.hyprland = {
     enable = true;
+    systemd.variables = ["--all"];
     xwayland.enable = true;
 
     settings = {
@@ -23,7 +24,7 @@
       };
 
       input = {
-        kb_layout = "us,ru";
+        kb_layout = "us,pl";
         kb_variant = "lang";
         kb_options = "grp:caps_toggle";
 

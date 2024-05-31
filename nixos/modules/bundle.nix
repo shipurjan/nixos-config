@@ -4,6 +4,7 @@
     ./sound.nix
     ./zram.nix
     ./env.nix
+    ./nvidia.nix
     ./user.nix
     ./xserver.nix
     ./nm.nix

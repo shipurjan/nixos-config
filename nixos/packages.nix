@@ -87,7 +87,9 @@
     pamixer
 
     # GPU stuff 
-    amdvlk
+    nvidia-x11
+    nvidia-settings
+    nvidia-persistenced
     rocm-opencl-icd
     glaxnimate
 

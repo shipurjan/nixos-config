@@ -5,7 +5,7 @@
 
     # displayManager = {
     #   autoLogin.enable = true;
-    #   autoLogin.user = "amper";
+    #   autoLogin.user = "cyprian";
     #   lightdm.enable = true;
     # };
 
@@ -18,7 +18,7 @@
       touchpad.accelProfile = "flat";
     };
 
-    videoDrivers = [ "amdgpu" ];
+    videoDrivers = [ "nvidia" ];
     deviceSection = ''Option "TearFree" "True"'';
     #displayManager.gdm.enable = true;
     #desktopManager.gnome.enable = true;
