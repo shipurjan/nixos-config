@@ -1,4 +1,9 @@
-{ pkgs, lib, inputs, ... }:
+{
+  pkgs,
+  lib,
+  inputs,
+  ...
+}:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -110,9 +115,9 @@
         enabled = true;
 
         bezier = [
-	"linear, 0, 0, 1, 1"
-        "easeOutExpoBack, 0.16, 1.1, 0.3, 1"
-	];
+          "linear, 0, 0, 1, 1"
+          "easeOutExpoBack, 0.16, 1.1, 0.3, 1"
+        ];
         #    bezier = "easeInSine, 0.12, 0, 0.39, 0";
         #    bezier = "easeOutSine, 0.61, 1, 0.88, 1";
         #    bezier = "easeInOutSine, 0.37, 0, 0.63, 1";

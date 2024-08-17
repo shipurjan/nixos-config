@@ -1,6 +1,9 @@
 { inputs, ... }:
 {
-  imports = [ ./nvidia.nix ];
+  imports = [
+    ./nvidia.nix
+    ./xdg.nix
+  ];
 
   # Boot
   boot = {

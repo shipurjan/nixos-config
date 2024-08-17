@@ -22,15 +22,18 @@
 
     # nix/nixos tools
     home-manager
+    statix
     nixfmt-rfc-style
 
     # misc
+    element-desktop-wayland
     neovim
     waybar
     hyprpaper
     gammastep
     mako
 
+    xdg-utils
     tree
     neofetch
     firefox
