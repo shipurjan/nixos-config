@@ -5,7 +5,12 @@
     shellAliases = {
       vim = "nvim";
       vi = "nvim";
-      rebuild = "sudo nixos-rebuild switch";
+      n = "cd ~/.nix";
+      l = "ls";
+      ll = "l -l";
+      la = "ll -a";
+      c = "clear";
+      rebuild = "sudo nixos-rebuild switch --flake ~/.nix && home-manager switch --flake ~/.nix";
     };
   };
 }

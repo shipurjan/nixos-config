@@ -17,8 +17,8 @@
     htop
 
     # programming
-    gh
     git
+    gh
 
     # nix/nixos tools
     home-manager
