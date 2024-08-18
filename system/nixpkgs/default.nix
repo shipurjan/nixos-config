@@ -43,6 +43,7 @@
     wl-clipboard
     playerctl
 
+    wev
     xdg-utils
     tree
     neofetch

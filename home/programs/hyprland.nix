@@ -61,7 +61,7 @@
         follow_mouse = 1;
 
 	scroll_method = "on_button_down";
-	scroll_button = "mouse:247";
+	scroll_button = 274;
 
         sensitivity = 0;
 
@@ -166,6 +166,7 @@
       misc = {
         disable_hyprland_logo = true;
         force_default_wallpaper = 0;
+	middle_click_paste = false;
       };
 
       windowrulev2 = [ "suppressevent maximize, class:.*" ];
