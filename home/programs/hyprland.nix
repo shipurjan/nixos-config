@@ -13,7 +13,6 @@
       exec-once = [
         "waybar"
         "hyprpaper"
-        "gammastep"
         "mako"
         "hyprctl dispatch workspace 1"
         "[workspace special:drawer silent] $terminal -o colors.alpha=0.5"
