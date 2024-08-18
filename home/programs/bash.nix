@@ -9,8 +9,10 @@
       ll = "l -l";
       la = "ll -a";
       c = "clear";
-      nr = "sudo nixos-rebuild switch --flake ~/.nix && home-manager switch --flake ~/.nix";
-      nt = "sudo nixos-rebuild test --flake ~/.nix && home-manager switch --flake ~/.nix";
+      ns = "sudo nixos-rebuild switch --flake ~/.nix";
+      nt = "sudo nixos-rebuild test --flake ~/.nix";
+      hs = "home-manager switch --flake ~/.nix";
+      rebuild = "ns && hs";
     };
   };
 }
