@@ -167,10 +167,6 @@
 
       # https://wiki.hyprland.org/Configuring/Variables/#misc
       misc = {
-        animate_manual_resizes = true;
-        animate_mouse_windowdragging = true;
-        enable_swallow = true;
-        render_ahead_of_time = false;
         disable_hyprland_logo = true;
         force_default_wallpaper = 0;
       };
@@ -189,6 +185,8 @@
         "$mainMod, code:115, exit,"
         "$mainMod, SPACE, exec, $menu"
         "$mainMod, F3, togglefloating"
+	''$mainMod SHIFT, H, exec, $terminal -e sh -c "nvim ~/.nix/home/programs/hyprland.nix"''
+        ''$mainMod SHIFT, P, exec, $terminal -e sh -c "nvim ~/.nix/system/nixpkgs/default.nix"''
 
         ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 2%+"
         ", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 2%-"

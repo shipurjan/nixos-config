@@ -11,7 +11,6 @@
 
   environment.systemPackages = with pkgs; [
     # system
-    foot
     nsxiv
     dolphin
     wofi
@@ -57,6 +56,8 @@
     noto-fonts-emoji
     twemoji-color-font
     font-awesome
+    fira-code
+    fira-code-symbols
     powerline-fonts
     powerline-symbols
     (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
