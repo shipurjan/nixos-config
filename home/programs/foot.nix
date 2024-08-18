@@ -1,10 +1,4 @@
 {
-  pkgs,
-  lib,
-  inputs,
-  ...
-}:
-{
   programs.foot = {
     enable = true;
     settings = {
@@ -20,11 +14,11 @@
       };
 
       colors = {
-	alpha = 0.9;
-	background = "000000";
-	foreground = "ffffff";
-	flash = "00ff00";
-	flash-alpha = 0.5;
+        alpha = 0.9;
+        background = "000000";
+        foreground = "ffffff";
+        flash = "00ff00";
+        flash-alpha = 0.5;
       };
     };
   };

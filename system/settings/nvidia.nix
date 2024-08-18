@@ -1,9 +1,4 @@
-{
-  pkgs,
-  config,
-  libs,
-  ...
-}:
+{ config, ... }:
 
 {
   # Enable OpenGL

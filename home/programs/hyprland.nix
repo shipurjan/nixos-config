@@ -1,10 +1,4 @@
 {
-  pkgs,
-  lib,
-  inputs,
-  ...
-}:
-{
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -58,7 +52,7 @@
       # https://wiki.hyprland.org/Configuring/Variables/#input
       input = {
         kb_layout = "pl";
-        kb_options = "grp:caps_toggle";
+        kb_options = "caps:escape";
         repeat_rate = 30;
         repeat_delay = 300;
 
@@ -185,7 +179,7 @@
         "$mainMod, code:115, exit,"
         "$mainMod, SPACE, exec, $menu"
         "$mainMod, F3, togglefloating"
-	''$mainMod SHIFT, H, exec, $terminal -e sh -c "nvim ~/.nix/home/programs/hyprland.nix"''
+        ''$mainMod SHIFT, H, exec, $terminal -e sh -c "nvim ~/.nix/home/programs/hyprland.nix"''
         ''$mainMod SHIFT, P, exec, $terminal -e sh -c "nvim ~/.nix/system/nixpkgs/default.nix"''
 
         ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 2%+"
