@@ -41,7 +41,7 @@
 
       # Refer to https://wiki.hyprland.org/Configuring/Variables/
       cursor = {
-        no_hardware_cursors = true;
+        no_hardware_cursors = false;
       };
 
       debug = {
@@ -59,6 +59,9 @@
         numlock_by_default = true;
 
         follow_mouse = 1;
+
+	scroll_method = "on_button_down";
+	scroll_button = "mouse:247";
 
         sensitivity = 0;
 
