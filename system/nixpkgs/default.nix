@@ -12,6 +12,7 @@
   environment.systemPackages = with pkgs; [
     # system
     foot
+    nsxiv
     dolphin
     wofi
     htop
@@ -22,16 +23,26 @@
 
     # nix/nixos tools
     home-manager
+    grimblast
     statix
     nixfmt-rfc-style
 
     # misc
+    unzip
+    gnumake
     element-desktop-wayland
     neovim
     waybar
     hyprpaper
     gammastep
     mako
+
+    grim
+    slurp
+    swappy
+    pngquant
+    wl-clipboard
+    playerctl
 
     xdg-utils
     tree
