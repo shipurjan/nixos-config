@@ -3,6 +3,7 @@
   imports = [
     ./hyprland.nix
     ./sound.nix
+    ./greetd.nix
   ];
 
   nixpkgs.config = {
