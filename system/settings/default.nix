@@ -2,6 +2,7 @@
   imports = [
     ./nvidia.nix
     ./xdg.nix
+    ./pam.nix
   ];
 
   # Boot
