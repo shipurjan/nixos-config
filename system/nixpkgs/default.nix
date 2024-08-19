@@ -48,6 +48,9 @@
     sd # simpler sed
     gping # better ping
     speedtest-cli # internet speed test
+    yt-dlp # online video downloader
+    ffmpeg # video/audio media converter
+    # TODO: add mpv
 
     # TODO: configure with Wiki
     # https://nixos.wiki/wiki/Docker
