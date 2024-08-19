@@ -5,6 +5,7 @@
       vim = "nvim";
       vi = "nvim";
       n = "cd ~/.nix";
+      f = "cd ~/.flakes";
       l = "ls";
       ll = "l -l";
       la = "ll -a";

@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   imports = [
     ./hyprland.nix
@@ -10,7 +10,11 @@
     allowUnfree = true;
   };
 
+  nixpkgs.config.permittedInsecurePackages = [ "jitsi-meet-1.0.8043" ];
+
   environment.systemPackages = with pkgs; [
+    inputs.nixvim.packages.${pkgs.system}.default
+
     # system
     nsxiv
     dolphin
@@ -31,7 +35,6 @@
     unzip
     gnumake
     element-desktop-wayland
-    neovim
     waybar
     hyprpaper
     gammastep
