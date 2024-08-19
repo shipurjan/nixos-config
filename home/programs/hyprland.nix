@@ -58,7 +58,7 @@
 
         numlock_by_default = true;
 
-        follow_mouse = 1;
+        follow_mouse = 2;
 
         scroll_method = "on_button_down";
         scroll_button = 274;
