@@ -39,11 +39,11 @@
         f = ezafiles;
         F = ezafilesGit;
 
-        # directories
-        # go nix
-        gn = "cd ~/.nix";
-        # go flakes
-        gf = "cd ~/.flakes";
+        # edit directories
+        # vim nix
+        vn = "cd ~/.nix && nvim .";
+        # vim flakes
+        vf = "cd ~/.flakes && nvim .";
 
         # terminal
         c = "clear && " + eza;
