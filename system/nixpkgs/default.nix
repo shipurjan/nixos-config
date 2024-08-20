@@ -4,6 +4,7 @@
     ./hyprland.nix
     ./sound.nix
     ./greetd.nix
+    ./steam.nix
   ];
 
   nixpkgs.config = {
@@ -79,6 +80,7 @@
     tree
     neofetch
     firefox
+    firefox-esr
     wget
   ];
 
