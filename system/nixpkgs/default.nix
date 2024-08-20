@@ -69,6 +69,8 @@
     hyprpaper
     gammastep
     mako
+    protonup
+    mangohud
 
     grim
     slurp
