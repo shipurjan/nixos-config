@@ -60,6 +60,7 @@
     # lazydocker
 
     # misc
+    discord
     unzip
     gnumake
     element-desktop-wayland
