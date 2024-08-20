@@ -61,6 +61,7 @@
 
     # misc
     discord
+    vesktop
     unzip
     gnumake
     element-desktop-wayland
