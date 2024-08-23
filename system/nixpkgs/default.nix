@@ -1,6 +1,7 @@
 { pkgs, inputs, ... }:
 {
   imports = [
+    ./fonts.nix
     ./hyprland.nix
     ./sound.nix
     ./greetd.nix
@@ -34,21 +35,22 @@
     nixfmt-rfc-style
 
     # cli-utils
-    silver-searcher # ag - recursive string search in directory
-    tldr # better man
-    scc # count code lines
-    duf # disk usage - better df
-    dua # disk usage - better du
-    aria2 # download utility - better wget
-    bat # better cat
-    diff-so-fancy # better diff
-    fzf # fuzzy find
-    jq # json processor
-    most # better more/less
-    procs # better ps
+    gping # alternative for `ping`
+    procs # altrnative for `ps`
+    tldr # alternative for `man`
+    duf # alternative for `df`
+    dua # alternative for `du`
+    aria2 # alternative for `wget`
+    bat # alternative for `cat`
+    diff-so-fancy # alternative for `diff`
+    fd # alternative for `find`
+    sd # simpler alternative for `sed`
+
     rsync # incremental file transfer
-    sd # simpler sed
-    gping # better ping
+    fzf # fuzzy find
+    scc # code line counter
+    silver-searcher # ag - recursive string search in directory
+    jq # json processor
     speedtest-cli # internet speed test
     yt-dlp # online video downloader
     ffmpeg # video/audio media converter
@@ -87,18 +89,5 @@
     firefox
     firefox-esr
     wget
-  ];
-
-  fonts.packages = with pkgs; [
-    jetbrains-mono
-    noto-fonts
-    noto-fonts-emoji
-    twemoji-color-font
-    font-awesome
-    fira-code
-    fira-code-symbols
-    powerline-fonts
-    powerline-symbols
-    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
   ];
 }
