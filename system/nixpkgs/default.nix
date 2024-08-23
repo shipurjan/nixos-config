@@ -5,6 +5,7 @@
     ./sound.nix
     ./greetd.nix
     ./steam.nix
+    ./stylix.nix
   ];
 
   nixpkgs.config = {
