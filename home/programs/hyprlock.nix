@@ -24,7 +24,7 @@
         {
           monitor = "DP-2";
           color = "rgb(000000)";
-          path = ''$HOME/Wallpapers/1920x1080/1693320970015320.png'';
+          path = builtins.toString ../../images/lockscreen.png;
         }
       ];
 

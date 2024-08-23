@@ -9,17 +9,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    stylix.url = "github:danth/stylix";
+
     nixvim = {
       url = "github:shipurjan/nixvim";
     };
   };
 
   outputs =
-    {
-      nixpkgs,
-      home-manager,
-      ...
-    }@inputs:
+    { nixpkgs, home-manager, ... }@inputs:
     let
       system = "x86_64-linux";
     in
@@ -28,16 +26,14 @@
         specialArgs = {
           inherit inputs system;
         };
-        modules = [
-          ./system
-        ];
+        modules = [ ./system ];
       };
 
       homeConfigurations.cyprian = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-	extraSpecialArgs = {
-	  inherit inputs system;
-	};
+        extraSpecialArgs = {
+          inherit inputs system;
+        };
         modules = [ ./home ];
       };
     };

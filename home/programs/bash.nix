@@ -62,6 +62,8 @@
         vi = "nvim";
       };
       initExtra = ''
+        export PS1='\[\033[01;34m\]\w\[\033[00m\]\[\033[01;32m\]\[\033[00m\]\$ '
+
         function cd {
           builtin cd "$@" && ${eza}
         }
