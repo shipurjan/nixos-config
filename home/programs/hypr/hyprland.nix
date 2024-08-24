@@ -177,7 +177,7 @@
 
       windowrulev2 = [
         "suppressevent maximize, class:.*"
-        "suppressevent fullscreen, class:.*"
+        "suppressevent fullscreen, class:^(?!firefox).*"
         "fullscreen,class:^steam_app\d+$"
         "monitor DP-2,class:^steam_app_\d+$"
         "workspace 11,class:^steam_app_\d+$"
