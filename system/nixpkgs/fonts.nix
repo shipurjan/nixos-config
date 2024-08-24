@@ -18,14 +18,17 @@
     fontconfig = {
       defaultFonts = {
         serif = [
-          "Liberation Serif"
-          "Vazirmatn"
+          "TeX Gyre Schola"
+          "Noto Sans CJK JP"
         ];
         sansSerif = [
-          "Ubuntu"
-          "Vazirmatn"
+          "TeX Gyre Heros"
+          "Noto Sans CJK JP"
         ];
-        monospace = [ "Ubuntu Mono" ];
+        monospace = [
+          "Fira Code"
+          "Noto Sans Mono CJK JP"
+        ];
       };
     };
   };
