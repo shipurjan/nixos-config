@@ -69,7 +69,6 @@
     gnumake
     element-desktop-wayland
     waybar
-    hyprpaper
     gammastep
     mako
     protonup
