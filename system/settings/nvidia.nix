@@ -1,4 +1,9 @@
-{ config, ... }:
+{
+  pkgs,
+  inputs,
+  config,
+  ...
+}:
 {
   # Enable OpenGL
   hardware.graphics = {

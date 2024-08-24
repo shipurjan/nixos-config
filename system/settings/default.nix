@@ -1,5 +1,6 @@
 {
   imports = [
+    ./cachix.nix
     ./nvidia.nix
     ./xdg.nix
     ./pam.nix
