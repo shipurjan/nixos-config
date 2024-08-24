@@ -177,9 +177,20 @@
         middle_click_paste = false;
       };
 
-      windowrulev2 = [ "suppressevent maximize, class:.*" ];
+      windowrulev2 = [
+        "suppressevent maximize, class:.*"
+        "suppressevent fullscreen, class:.*"
+        "stayfocused, title:^(),class:^(steam)"
+        "minsize 1 1, title:^(),class:^(steam)"
+        "fullscreen,class:^steam_app\d+$"
+        "monitor DP-2,class:^steam_app_\d+$"
+        "workspace 11,class:^steam_app_\d+$"
+      ];
 
-      workspace = [ "1,monitor:DP-2" ];
+      workspace = [
+        "1,monitor:DP-2"
+        "11,monitor:DP-2,border:false,rounding:false"
+      ];
 
       # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
       bind = [
@@ -191,6 +202,7 @@
         "$mainMod, code:115, exit,"
         "$mainMod, SPACE, exec, $menu"
         "$mainMod, F3, togglefloating"
+        "$mainMod, F, fullscreen"
         ''$mainMod SHIFT, H, exec, $terminal -e sh -c "nvim ~/.nix/home/programs/hyprland.nix"''
         ''$mainMod SHIFT, P, exec, $terminal -e sh -c "nvim ~/.nix/system/nixpkgs/default.nix"''
 
