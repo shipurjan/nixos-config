@@ -2,7 +2,7 @@
 {
   stylix = {
     enable = true;
-    image = ../../images/bitches-brew.jpg;
+    image = ../../images/greek-woman-with-cat.jpg;
     polarity = "dark";
 
     fonts = {
