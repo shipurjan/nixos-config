@@ -16,6 +16,13 @@
     ];
 
     fontconfig = {
+      useEmbeddedBitmaps = true;
+      subpixel = {
+        rgba = "none";
+      };
+      hinting = {
+        style = "medium";
+      };
       defaultFonts = {
         serif = [
           "TeX Gyre Schola"
