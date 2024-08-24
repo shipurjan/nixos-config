@@ -5,6 +5,8 @@
     ./pam.nix
   ];
 
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   # Boot
   boot = {
     loader = {
@@ -13,6 +15,10 @@
       efi.canTouchEfiVariables = true;
     };
     plymouth.enable = true;
+    kernelParams = [
+      "nvidia_drm.modeset=1"
+      "nvidia_drm.fbdev=1"
+    ];
   };
 
   networking.hostName = "nixos";
