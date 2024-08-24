@@ -1,16 +1,9 @@
 {
   programs.bash =
     let
-      ezaGit = "eza -x --git --color=auto -s ext --group-directories-first";
-      eza = ezaGit + " --git-ignore";
-
-      ezatreeGit = ezaGit + " -T -L 1";
-      ezatree = ezatreeGit + " --git-ignore";
-
-      ezadirsGit = ezatreeGit + " -D";
+      eza = "eza -x --git --color=auto -s ext --group-directories-first";
+      ezatree = eza + " -T -L 1";
       ezadirs = ezatree + " -D";
-
-      ezafilesGit = ezatreeGit + " -f";
       ezafiles = ezatree + " -f";
     in
     {
@@ -18,26 +11,13 @@
       enableCompletion = true;
       shellAliases = {
         # eza
+        l = eza + " --git-ignore";
         ls = eza;
-        LS = ezaGit;
-
-        l = eza;
-        L = ezaGit;
-
         ll = eza + " -l";
-        LL = ezaGit + " -l";
-
         la = eza + " -la";
-        LA = ezaGit + " -la";
-
         t = ezatree;
-        T = ezatreeGit;
-
         d = ezadirs;
-        D = ezadirsGit;
-
         f = ezafiles;
-        F = ezafilesGit;
 
         # edit directories
         # vim nix
