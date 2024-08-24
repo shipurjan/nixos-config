@@ -24,7 +24,7 @@
         {
           monitor = "DP-2";
           color = "rgb(000000)";
-          path = builtins.toString ../../images/greek-woman-with-cat.jpg;
+          path = builtins.toString ../../../images/greek-woman-with-cat.jpg;
         }
       ];
 
