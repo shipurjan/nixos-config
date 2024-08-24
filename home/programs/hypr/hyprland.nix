@@ -28,8 +28,6 @@
 
       # See https://wiki.hyprland.org/Configuring/Environment-variables/
       env = [
-        "MOZ_ENABLE_WAYLAND,1"
-        "MOZ_DISABLE_RDD_SANDBOX,1"
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
@@ -180,8 +178,6 @@
       windowrulev2 = [
         "suppressevent maximize, class:.*"
         "suppressevent fullscreen, class:.*"
-        "stayfocused, title:^(),class:^(steam)"
-        "minsize 1 1, title:^(),class:^(steam)"
         "fullscreen,class:^steam_app\d+$"
         "monitor DP-2,class:^steam_app_\d+$"
         "workspace 11,class:^steam_app_\d+$"
