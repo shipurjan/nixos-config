@@ -10,6 +10,10 @@
       enable = true;
       enableCompletion = true;
       shellAliases = {
+        cp = "cp -iv";
+        mv = "mv -iv";
+        rm = "rm -iv";
+
         # eza
         l = eza + " --git-ignore";
         ls = eza;
