@@ -16,7 +16,7 @@
     stylix.url = "github:danth/stylix";
 
     nixvim = {
-      url = "github:shipurjan/nixvim";
+      url = "github:shipurjan/nixvim-config";
     };
   };
 

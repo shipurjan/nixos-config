@@ -19,6 +19,7 @@
     inputs.nixvim.packages.${pkgs.system}.default
 
     # system
+    nushell
     nsxiv
     dolphin
     wofi

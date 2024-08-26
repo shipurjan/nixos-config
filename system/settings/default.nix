@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports = [
     ./cachix.nix
@@ -32,14 +33,18 @@
     "flakes"
   ];
 
-  users.users = {
-    cyprian = {
-      isNormalUser = true;
-      extraGroups = [
-        "wheel"
-        "networkmanager"
-        "input"
-      ];
+  users = {
+    defaultUserShell = pkgs.nushell;
+    users = {
+      cyprian = {
+        shell = pkgs.nushell;
+        isNormalUser = true;
+        extraGroups = [
+          "wheel"
+          "networkmanager"
+          "input"
+        ];
+      };
     };
   };
 
