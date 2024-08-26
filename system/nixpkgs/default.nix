@@ -16,7 +16,7 @@
   nixpkgs.config.permittedInsecurePackages = [ "jitsi-meet-1.0.8043" ];
 
   environment.systemPackages = with pkgs; [
-    inputs.nixvim.packages.${pkgs.system}.default
+    inputs.nixvim-config.packages.${pkgs.system}.default
 
     # system
     nushell
