@@ -17,6 +17,7 @@
       efi.canTouchEfiVariables = true;
     };
     plymouth.enable = true;
+    kernelPackages = pkgs.linuxPackages_zen;
     kernelParams = [
       "nvidia_drm.modeset=1"
       "nvidia_drm.fbdev=1"

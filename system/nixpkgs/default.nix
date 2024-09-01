@@ -65,6 +65,7 @@
 
     # misc
     discord
+    mullvad-vpn
     vesktop
     unzip
     gnumake
@@ -87,6 +88,7 @@
     tree
     neofetch
     firefox
+    google-chrome
     firefox-esr
     wget
   ];
