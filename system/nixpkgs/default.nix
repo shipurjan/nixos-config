@@ -7,6 +7,7 @@
     ./greetd.nix
     ./steam.nix
     ./stylix.nix
+    ./mullvad.nix
   ];
 
   nixpkgs.config = {
@@ -65,7 +66,6 @@
 
     # misc
     discord
-    mullvad-vpn
     vesktop
     unzip
     gnumake
