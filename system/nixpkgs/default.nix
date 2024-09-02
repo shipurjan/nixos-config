@@ -8,6 +8,7 @@
     ./steam.nix
     ./stylix.nix
     ./mullvad.nix
+    ./nix-ld.nix
   ];
 
   nixpkgs.config = {
@@ -34,6 +35,7 @@
     home-manager
     grimblast
     statix
+    nix-index
     nixfmt-rfc-style
 
     # cli-utils
