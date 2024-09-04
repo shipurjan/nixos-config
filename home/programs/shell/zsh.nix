@@ -150,6 +150,11 @@
           ${fileContents ./rc/fzf-tab.zsh}
           ${fileContents ./rc/misc.zsh}
 
+          # Pure zsh prompt
+          # <https://github.com/sindresorhus/pure>
+          ${fileContents ./rc/pure.zsh}
+
+
           # Set LS_COLORS by parsing dircolors output
           LS_COLORS="$(${lib.getExe' pkgs.coreutils "dircolors"} --sh)"
           LS_COLORS="''${''${LS_COLORS#*\'}%\'*}"
