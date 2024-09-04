@@ -234,6 +234,8 @@
         cat = "bat --style=plain --pager=never";
         switch = "sudo nixos-rebuild switch --flake ~/.nix && ${switch-home}";
         test = "sudo nixos-rebuild test --flake ~/.nix && ${switch-home}";
+
+        reboot-windows = "systemctl reboot --boot-loader-entry=auto-windows";
       };
     };
 }
