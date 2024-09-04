@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
-    ./cachix.nix
+    ./nix.nix
     ./nvidia.nix
     ./xdg.nix
     ./pam.nix
@@ -35,12 +35,6 @@
   networking.hostName = "nixos";
   time.timeZone = "Europe/Warsaw";
   i18n.defaultLocale = "en_US.UTF-8";
-
-  # Enable flakes
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
 
   users = {
     defaultUserShell = pkgs.zsh;

@@ -37,10 +37,12 @@
     gh
 
     # nix/nixos tools
+    cachix
     home-manager
     grimblast
     statix
     nix-index
+    nix-prefetch-git
     nixfmt-rfc-style
 
     # cli-utils
