@@ -10,6 +10,11 @@
   environment = {
     sessionVariables.NIXOS_OZONE_WL = "1";
     shells = with pkgs; [ zsh ];
+    variables = {
+      EDITOR = "nvim";
+      SYSTEMD_EDITOR = "nvim";
+      VISUAL = "nvim";
+    };
   };
 
   # Boot
