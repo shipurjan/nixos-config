@@ -7,7 +7,10 @@
     ./pam.nix
   ];
 
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  environment = {
+    sessionVariables.NIXOS_OZONE_WL = "1";
+    shells = with pkgs; [ zsh ];
+  };
 
   # Boot
   boot = {
@@ -35,10 +38,10 @@
   ];
 
   users = {
-    defaultUserShell = pkgs.nushell;
+    defaultUserShell = pkgs.zsh;
     users = {
       cyprian = {
-        shell = pkgs.nushell;
+        shell = pkgs.zsh;
         isNormalUser = true;
         extraGroups = [
           "wheel"

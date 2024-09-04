@@ -1,14 +1,5 @@
 {
   imports = [
-    ./carapace.nix
-    ./starship.nix
+    ./zsh.nix
   ];
-
-  programs.nushell = {
-    enable = true;
-    shellAliases = {
-      vi = "nvim";
-      vim = "nvim";
-    };
-  };
 }

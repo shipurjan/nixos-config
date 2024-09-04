@@ -2,6 +2,7 @@
 {
   imports = [
     ./fonts.nix
+    ./zsh.nix
     ./hyprland.nix
     ./sound.nix
     ./greetd.nix
@@ -22,9 +23,8 @@
     inputs.nixvim-config.packages.${pkgs.system}.default
 
     # system
-    nushell
     nsxiv
-    dolphin
+    pcmanfm
     wofi
     htop
 
@@ -59,6 +59,7 @@
     speedtest-cli # internet speed test
     yt-dlp # online video downloader
     ffmpeg # video/audio media converter
+    mpv
     # TODO: add mpv
 
     # TODO: configure with Wiki
