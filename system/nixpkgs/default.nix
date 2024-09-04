@@ -2,6 +2,7 @@
 {
   imports = [
     ./fonts.nix
+    ./nix-your-shell.nix
     ./zsh.nix
     ./hyprland.nix
     ./sound.nix

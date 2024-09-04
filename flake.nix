@@ -18,6 +18,11 @@
     nixvim-config = {
       url = "github:shipurjan/nixvim-config";
     };
+
+    nix-your-shell = {
+      url = "github:MercuryTechnologies/nix-your-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
