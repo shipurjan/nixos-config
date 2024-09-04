@@ -22,6 +22,9 @@
   environment.systemPackages = with pkgs; [
     inputs.nixvim-config.packages.${pkgs.system}.default
 
+    # zsh shell
+    pure-prompt
+
     # system
     nsxiv
     pcmanfm
