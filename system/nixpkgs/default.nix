@@ -9,6 +9,7 @@
     ./stylix.nix
     ./mullvad.nix
     ./nix-ld.nix
+    ./gvfs.nix
   ];
 
   nixpkgs.config = {
