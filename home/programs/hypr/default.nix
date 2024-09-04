@@ -1,7 +1,7 @@
 {
   imports = [
     ./hyprland.nix
-    ./hyprlock.nix
+    ./swaylock.nix
     ./hyprpaper.nix
   ];
 }

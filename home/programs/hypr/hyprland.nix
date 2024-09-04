@@ -11,7 +11,7 @@
 
       # Autostart necessary processes (like notifications daemons, status bars, etc.)
       exec-once = [
-        "hyprlock -q --immediate --immediate-render"
+        "swaylock"
         "waybar"
         "hyprpaper"
         "mako"
