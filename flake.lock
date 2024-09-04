@@ -814,6 +814,22 @@
         "type": "github"
       }
     },
+    "nixos-unstable-small": {
+      "locked": {
+        "lastModified": 1725448034,
+        "narHash": "sha256-YWbVeDERbIHAEQCtDtUunHYUNH31ReIdJIP8juXfdpM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "9b40840066f93767bb528810ea7dc9caacd8997f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable-small",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1725103162,
@@ -1010,6 +1026,7 @@
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "nix-your-shell": "nix-your-shell",
+        "nixos-unstable-small": "nixos-unstable-small",
         "nixpkgs": "nixpkgs_2",
         "nixvim-config": "nixvim-config",
         "stylix": "stylix"
