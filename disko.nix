@@ -2,9 +2,8 @@
   disko.devices = {
     disk = {
       my-disk = {
-        # DOUBLE CHECK THE DRIVE ID, BECAUSE THE LABEL
-        # COULD CHANGE FOR THE SAME DRIVE
-        device = "/dev/nvme0n1";
+        # enter drive partition name here
+        device = "/dev/...x";
         type = "disk";
         content = {
           type = "gpt";
