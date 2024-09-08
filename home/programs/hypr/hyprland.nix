@@ -14,9 +14,10 @@
         "swaylock"
         "waybar"
         "hyprpaper"
+        "mullvad-vpn"
         "mako"
         "hyprctl dispatch workspace 1"
-        "[workspace special:drawer silent] $terminal -o colors.alpha=0.5"
+        "[workspace special:drawer silent] $terminal"
       ];
 
       # See https://wiki.hyprland.org/Configuring/Monitors/
