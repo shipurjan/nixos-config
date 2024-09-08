@@ -38,24 +38,30 @@
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }@inputs:
+    inputs:
     let
-      system = "x86_64-linux";
-    in
-    {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = {
-          inherit inputs system;
-        };
-        modules = [ ./system ];
-      };
+      lib = inputs.snowfall-lib.mkLib {
+        inherit inputs;
+        src = ./.;
 
-      homeConfigurations.cyprian = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = {
-          inherit inputs system;
+        snowfall = {
+          meta = {
+            name = "dotfiles";
+            title = "shipurjan's nix configuration";
+          };
+
+          namespace = "dotfiles";
         };
-        modules = [ ./home ];
       };
+    in
+    lib.mkFlake {
+      channels-config = {
+        allowUnfree = true;
+        permittedInsecurePackages = [
+          "jitsi-meet-1.0.8043"
+        ];
+
+      };
+      outputs-builder = channels: { formatter = channels.nixpkgs.nixfmt-rfc-style; };
     };
 }
