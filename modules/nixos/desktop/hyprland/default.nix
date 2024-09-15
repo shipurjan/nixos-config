@@ -11,7 +11,7 @@ let
 
   inherit (lib)
     mkIf
-    mkEnableOption
+    mkBoolOpt
     mkOption
     mkMerge
     types
@@ -37,7 +37,7 @@ let
 in
 {
   options.${namespace}.desktop.hyprland = {
-    enable = mkEnableOption "Hyprland";
+    enable = mkBoolOpt false "Whether or not to enable the Hyprland tiling compositor.";
 
     package = mkOption {
       type = types.package;

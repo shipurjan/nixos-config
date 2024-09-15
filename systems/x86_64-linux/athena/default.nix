@@ -1,39 +1,35 @@
 {
   pkgs,
+  config,
   lib,
+  channel,
   namespace,
   ...
 }:
 with lib;
 with lib.${namespace};
 {
+  imports = [ ./hardware.nix ];
+
+  environment.systemPackages = with pkgs; [
+    chromium
+  ];
+
   plusultra = {
-    nix = enabled;
+    apps =
+      {
+      };
 
-    cli-apps = {
-      neovim = enabled;
+    services =
+      {
+      };
+
+    archetypes = {
+      gaming = enabled;
+      workstation = enabled;
     };
 
-    tools = {
-      misc = enabled;
-      git = enabled;
-      http = enabled;
-    };
-
-    hardware = {
-      networking = enabled;
-    };
-
-    security = {
-      doas = enabled;
-    };
-
-    system = {
-      fonts = enabled;
-      locale = enabled;
-      time = enabled;
-      xkb = enabled;
-    };
+    desktop.hyprland = enabled;
   };
 
   # This value determines the NixOS release from which the default
@@ -42,5 +38,5 @@ with lib.${namespace};
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "21.11"; # Did you read the comment?
+  system.stateVersion = "24.05"; # Did you read the comment?
 }
