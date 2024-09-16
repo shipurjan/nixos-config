@@ -6,18 +6,10 @@
   namespace,
   ...
 }:
+with lib;
+with lib.${namespace};
 let
   cfg = config.${namespace}.desktop.hyprland;
-
-  inherit (lib)
-    mkIf
-    mkBoolOpt
-    mkOption
-    mkMerge
-    types
-    optional
-    ;
-  inherit (lib.${namespace}) enabled colors;
 
   pamixer = lib.getExe pkgs.pamixer;
 

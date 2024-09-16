@@ -1,8 +1,5 @@
 {
-  pkgs,
-  config,
   lib,
-  channel,
   namespace,
   ...
 }:
@@ -11,24 +8,7 @@ with lib.${namespace};
 {
   imports = [ ./hardware.nix ];
 
-  environment.systemPackages = with pkgs; [
-    chromium
-  ];
-
   plusultra = {
-    apps =
-      {
-      };
-
-    services =
-      {
-      };
-
-    archetypes = {
-      gaming = enabled;
-      workstation = enabled;
-    };
-
     desktop.hyprland = enabled;
   };
 
