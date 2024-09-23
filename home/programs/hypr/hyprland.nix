@@ -11,7 +11,6 @@
 
       # Autostart necessary processes (like notifications daemons, status bars, etc.)
       exec-once = [
-        "swaylock"
         "waybar"
         "hyprpaper"
         "mullvad-vpn"
