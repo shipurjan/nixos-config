@@ -76,6 +76,7 @@
 
     # misc
     discord
+    keepassxc
     vesktop
     unzip
     gnumake
